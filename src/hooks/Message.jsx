@@ -1,16 +1,29 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Message = () => {
+  const [coodinates, setCoodinates] = useState({ x: 0, y: 0 });
+
+  const { x, y } = coodinates;
+
   useEffect(() => {
-    console.log("Componente Message Montado");
+    const mouseMove = (event) => {
+      const coordinates = { x: event.x, y: event.y };
+      setCoodinates(coordinates);
+    };
+
+    window.addEventListener("mousemove", mouseMove);
 
     return () => {
-      console.log("Componente Message Desmontado");
-    }
+      window.removeEventListener("mousemove", mouseMove);
+    };
   }, []);
 
   return (
-    <h3 className="text-center">¡ React es Genial !</h3>
+    <section>
+      <h3 className="text-center">Mis Cordenadas son:</h3>
+      <p>x: { x }</p>
+      <p>y: { y }</p>
+    </section>
   );
 };
 
