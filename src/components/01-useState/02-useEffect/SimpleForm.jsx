@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Message from '../../../hooks/Message';
 
 const SimpleForm = () => {
 
@@ -9,9 +10,17 @@ const SimpleForm = () => {
 
   const { name, email } = formState;
 
-  useEffect(() => {
-    console.log("¡ Efecto Realizado !");
-  }, []);
+  // useEffect(() => {
+  //   console.log("¡ Efecto Realizado !");
+  // }, []);
+
+  // useEffect(() => {
+  //   console.log("¡ formState Cambió !");
+  // }, [ formState ]);
+
+  // useEffect(() => {
+  //   console.log("¡ email Cambió !");
+  // }, [ email ]);
 
   const handleInputChange = ({ target }) => {
     setFormState({
@@ -52,6 +61,8 @@ const SimpleForm = () => {
           />
         </div>
       </form>
+
+      { (name === "Daniel") && <Message /> }
 
     </section>
   );
