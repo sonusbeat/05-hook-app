@@ -1,4 +1,4 @@
-import CounterApp from './components/01-useState/CounterApp';
+import CounterWithCustomHook from './components/01-useState/CounterWithCustomHook';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <CounterApp />
+        <CounterWithCustomHook />
       </main>
     </section>
   );
