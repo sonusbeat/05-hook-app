@@ -1,4 +1,4 @@
-import CounterWithCustomHook from './components/01-useState/CounterWithCustomHook';
+import SimpleForm from './components/01-useState/02-useEffect/SimpleForm';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <CounterWithCustomHook />
+        <SimpleForm />
       </main>
     </section>
   );
