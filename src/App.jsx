@@ -1,5 +1,4 @@
-
-import FormWithCustomHook from './components/02-useEffect/FormWithCustomHook';
+import MultipleCustomHooks from './components/03-examples/MultipleCustomHooks';
 
 const App = () => {
   return (
@@ -9,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <FormWithCustomHook />
+        <MultipleCustomHooks />
       </main>
     </section>
   );
