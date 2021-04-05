@@ -1,4 +1,4 @@
-import FocusScreen from './components/04-useRef/FocusScreen';
+import RealExampleRef from './components/04-useRef/RealExampleRef';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <FocusScreen />
+        <RealExampleRef />
       </main>
     </section>
   );

@@ -12,7 +12,7 @@ const MultipleCustomHooks = () => {
 
   return (
     <section>
-      <h2 className="text-center">Breaking Bad Quotes</h2>
+      <h3 className="text-center">Breaking Bad Quotes</h3>
 
       {
         loading ? (
