@@ -1,4 +1,4 @@
-import MultipleCustomHooks from './components/03-examples/MultipleCustomHooks';
+import FocusScreen from './components/04-useRef/FocusScreen';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <MultipleCustomHooks />
+        <FocusScreen />
       </main>
     </section>
   );
