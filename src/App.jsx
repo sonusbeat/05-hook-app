@@ -1,4 +1,4 @@
-import Memorize from './components/06-memos/Memorize';
+import MemoHook from './components/06-memos/MemoHook';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <Memorize />
+        <MemoHook />
       </main>
     </section>
   );

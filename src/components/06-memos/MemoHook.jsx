@@ -1,11 +1,12 @@
+import { useMemo, useState } from 'react';
 import useCounter from '../../hooks/useCounter';
-import Small from './Small';
-import { useState } from 'react';
+import hardProcess from '../../helpers/hardProcess';
 
-const Memorize = () => {
+const MemoHook = () => {
+  const { counter, increment } = useCounter(100);
   const [show, setShow] = useState(false);
 
-  const { counter, increment } = useCounter(10);
+  const memoHardProcess = useMemo(() => hardProcess(counter), [ counter ]);
 
   const paragraph = {
     fontSize: "2.3rem",
@@ -19,12 +20,16 @@ const Memorize = () => {
   return (
     <section>
       <h2 className="text-center text-secondary">
-        Memorize Hook
+        Memo Hook
       </h2>
 
       <p style={ paragraph }>
         Counter:&nbsp;
-        <Small value={ counter } />
+        <span className="text-primary">{ counter }</span>
+      </p>
+
+      <p className="text-danger text-center">
+        { memoHardProcess }
       </p>
 
       <div className="form-group text-center">
@@ -46,4 +51,4 @@ const Memorize = () => {
   );
 }
 
-export default Memorize;
+export default MemoHook;
