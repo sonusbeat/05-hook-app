@@ -1,4 +1,4 @@
-import CallbackHook from './components/07-useCallback/CallbackHook';
+import Father from './components/08-tarea-memo/Father';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <CallbackHook />
+        <Father />
       </main>
     </section>
   );
