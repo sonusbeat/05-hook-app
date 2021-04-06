@@ -1,4 +1,4 @@
-import MemoHook from './components/06-memos/MemoHook';
+import CallbackHook from './components/07-useCallback/CallbackHook';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <MemoHook />
+        <CallbackHook />
       </main>
     </section>
   );
