@@ -1,4 +1,4 @@
-import Layout from './components/05-useLayoutEffect/Layout';
+import Memorize from './components/06-memos/Memorize';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <Layout />
+        <Memorize />
       </main>
     </section>
   );
