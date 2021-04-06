@@ -1,4 +1,4 @@
-import RealExampleRef from './components/04-useRef/RealExampleRef';
+import Layout from './components/05-useLayoutEffect/Layout';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <RealExampleRef />
+        <Layout />
       </main>
     </section>
   );
