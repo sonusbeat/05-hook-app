@@ -1,4 +1,4 @@
-import Father from './components/08-tarea-memo/Father';
+import TodoApp from './components/09-use-reducer/TodoApp';
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <hr />
       <main>
-        <Father />
+        <TodoApp />
       </main>
     </section>
   );
