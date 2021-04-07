@@ -37,6 +37,15 @@ const TodoApp = () => {
     reset();
   };
 
+  const HandleDelete = (todoId) => {
+    const todoAction = {
+      type: "delete",
+      payload: todoId
+    };
+
+    dispatch(todoAction);
+  };
+
   return (
     <section>
       <h2 className="text-center mb-4">Todo App <small>({ todos.length })</small></h2>
@@ -77,7 +86,10 @@ const TodoApp = () => {
                 </td>
                 <td className="text-center">{ todo.done ? "Yes" : "No" }</td>
                 <td className="text-center">
-                  <button className="btn btn-danger btn-sm">Delete</button>
+                  <button
+                    className="btn btn-danger btn-sm"
+                    onClick={ () => HandleDelete(todo.id) }
+                  >Delete</button>
                 </td>
               </tr>
             ))
