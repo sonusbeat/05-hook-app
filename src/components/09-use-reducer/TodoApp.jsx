@@ -10,7 +10,24 @@ const initialState = [{
 
 const TodoApp = () => {
 
-  const [ todos ] = useReducer(TodoReducer, initialState);
+  const [ todos, dispatch ] = useReducer(TodoReducer, initialState);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const newTodo = {
+      id: new Date().getTime(),
+      description: "New Task",
+      done: false
+    };
+
+    const todoAction = {
+      type: "add",
+      payload: newTodo
+    }
+
+    dispatch(todoAction);
+  };
 
   console.log(todos);
 
@@ -19,7 +36,7 @@ const TodoApp = () => {
       <h2 className="text-center mb-4">Todo App <small>({ todos.length })</small></h2>
 
       <div className="mb-5">
-        <form>
+        <form onSubmit={ handleSubmit }>
           <div className="form-group">
             <input
               name="description"
@@ -28,6 +45,10 @@ const TodoApp = () => {
               autoComplete="off"
             />
           </div>
+          <button
+            type="submit"
+            className="btn btn-primary btn-block"
+          >Agregar</button>
         </form>
       </div>
 
