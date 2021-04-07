@@ -46,6 +46,13 @@ const TodoApp = () => {
     dispatch(todoAction);
   };
 
+  const HandleToggle = (todoId) => {
+    dispatch({
+      type: "toggle",
+      payload: todoId
+    });
+  };
+
   return (
     <section>
       <h2 className="text-center mb-4">Todo App <small>({ todos.length })</small></h2>
@@ -69,33 +76,45 @@ const TodoApp = () => {
         </form>
       </div>
 
-      <table className="table">
-        <thead>
-          <tr>
-            <th>Task</th>
-            <th className="text-center">Done</th>
-            <th className="text-center">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            todos.map((todo, i) => (
-              <tr key={todo.id}>
-                <td>
-                  <p className="description">{ `${i + 1}. ${todo.description}` }</p>
-                </td>
-                <td className="text-center">{ todo.done ? "Yes" : "No" }</td>
-                <td className="text-center">
-                  <button
-                    className="btn btn-danger btn-sm"
-                    onClick={ () => HandleDelete(todo.id) }
-                  >Delete</button>
-                </td>
+      {
+        todos.length ?
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th className="text-center">Done</th>
+                <th className="text-center">Actions</th>
               </tr>
-            ))
-          }
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+              {
+                todos.map((todo, i) => (
+                  <tr key={todo.id}>
+                    <td>
+                      <p
+                        className={ todo.done ? "description completed" : "description" }
+                        onClick={ () => HandleToggle(todo.id) }
+                      >
+                        { `${i + 1}. ${todo.description}` }
+                      </p>
+                    </td>
+                    <td className="text-center">{ todo.done ? "Yes" : "No" }</td>
+                    <td className="text-center">
+                      <button
+                        className="btn btn-danger btn-sm"
+                        onClick={ () => HandleDelete(todo.id) }
+                      >Delete</button>
+                    </td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        :
+        <div className="alert alert-warning text-center">
+          <strong>Aún no hay tareas creadas</strong>
+        </div>
+      }
     </section>
   );
 }
