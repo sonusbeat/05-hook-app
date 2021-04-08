@@ -1,15 +1,9 @@
-import TodoApp from './components/09-use-reducer/TodoApp';
+import MainApp from './components/10-useContext/MainApp';
 
 const App = () => {
   return (
     <section className="container">
-      <header>
-        <h1 className="text-center mt-4">React Hooks</h1>
-      </header>
-      <hr />
-      <main>
-        <TodoApp />
-      </main>
+      <MainApp />
     </section>
   );
 }

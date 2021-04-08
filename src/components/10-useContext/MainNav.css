@@ -1,0 +1,25 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  display: flex;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: white;
+  padding: 0 !important;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: var(--orange) !important;
+}
+
+.active {
+  color: var(--orange) !important;
+}
