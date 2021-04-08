@@ -2,12 +2,18 @@ import { useContext } from "react";
 import UserContext from './UserContext';
 
 const HomeScreen = () => {
-  const userContext = useContext(UserContext);
+  const { user } = useContext(UserContext);
 
-  console.log(userContext);
+  console.log(user);
 
   return (
-    <h1 className="text-center">Home Screen</h1>
+    <main>
+      <h1 className="text-center">Home Screen</h1>
+      <hr/>
+      <pre>
+        { JSON.stringify(user, null, 3) }
+      </pre>
+    </main>
   );
 }
 

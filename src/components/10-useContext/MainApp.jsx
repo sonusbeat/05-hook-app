@@ -1,16 +1,16 @@
+import { useState } from 'react';
 import AppRouter from "./AppRouter";
 import UserContext from "./UserContext";
 import "./MainNav.css";
 
 const MainApp = () => {
-  const user = {
-    id: 5689,
-    name: "Daniel",
-    email: "user@nowhere.com"
-  };
+  const [user, setUser] = useState({});
 
   return (
-    <UserContext.Provider value={ user }>
+    <UserContext.Provider value={{
+      user,
+      setUser
+    }}>
       <AppRouter />
     </UserContext.Provider>
   );
