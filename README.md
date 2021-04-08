@@ -1,6 +1,6 @@
 # React Hooks Tutorial
 
-## Versión: `1.1.1`
+## Versión: `1.1.2`
 
 ## Scripts Disponibles
 
