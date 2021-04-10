@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <TodoList /> Deberia coincidir con el snapshot 1`] = `
+<table
+  className="table"
+>
+  <thead>
+    <tr>
+      <th>
+        Task
+      </th>
+      <th
+        className="text-center"
+      >
+        Done
+      </th>
+      <th
+        className="text-center"
+      >
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <TodoItem
+      HandleDelete={[MockFunction]}
+      HandleToggle={[MockFunction]}
+      index={0}
+      key="1"
+      todo={
+        Object {
+          "description": "Aprender React",
+          "done": false,
+          "id": 1,
+        }
+      }
+    />
+    <TodoItem
+      HandleDelete={[MockFunction]}
+      HandleToggle={[MockFunction]}
+      index={1}
+      key="2"
+      todo={
+        Object {
+          "description": "Aprender ExpressJs",
+          "done": false,
+          "id": 2,
+        }
+      }
+    />
+  </tbody>
+</table>
+`;
