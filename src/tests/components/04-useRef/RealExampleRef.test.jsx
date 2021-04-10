@@ -1,4 +1,4 @@
-import RealExampleRef from '../../components/04-useRef/RealExampleRef';
+import RealExampleRef from '../../../components/04-useRef/RealExampleRef';
 import { shallow } from 'enzyme';
 
 describe('Pruebas en <RealExampleRef />', () => {

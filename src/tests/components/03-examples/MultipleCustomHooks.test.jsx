@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from 'enzyme';
-import MultipleCustomHooks from '../../components/03-examples/MultipleCustomHooks';
-import useFetch from '../../hooks/useFetch';
-import useCounter from '../../hooks/useCounter';
+import MultipleCustomHooks from '../../../components/03-examples/MultipleCustomHooks';
+import useFetch from "../../../hooks/useFetch";
+import useCounter from "../../../hooks/useCounter";
 
-jest.mock('../../hooks/useFetch');
-jest.mock('../../hooks/useCounter');
+jest.mock('../../../hooks/useFetch');
+jest.mock('../../../hooks/useCounter');
 
 describe('Puebas en <MultipleCustomHooks />', () => {
 

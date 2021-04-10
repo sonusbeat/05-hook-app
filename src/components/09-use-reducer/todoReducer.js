@@ -3,9 +3,6 @@ const TodoReducer = (state = [], action) => {
     case "add":
       return [ ...state, action.payload ];
 
-    case "delete":
-      return state.filter( todo => todo.id !== action.payload );
-
     // Método alternativo
     case "toggle-old":
       return state.map( todo => {
@@ -25,6 +22,9 @@ const TodoReducer = (state = [], action) => {
           ? { ...todo, done: !todo.done }
           : todo
       );
+
+    case "delete":
+      return state.filter( todo => todo.id !== action.payload );
 
     default:
       return state;
