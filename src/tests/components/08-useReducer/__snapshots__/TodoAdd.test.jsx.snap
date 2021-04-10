@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <TodoAdd /> Debe de coincidir con el snapshot 1`] = `
+<div
+  className="mb-5"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <input
+        autoComplete="off"
+        className="form-control"
+        name="description"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <button
+      className="btn btn-primary btn-block"
+      type="submit"
+    >
+      Agregar
+    </button>
+  </form>
+</div>
+`;

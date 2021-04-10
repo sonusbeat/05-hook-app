@@ -1,6 +1,6 @@
 import useForm from '../../hooks/useForm';
 
-const TodoAdd = ({ HandleAddTodo, todosCount }) => {
+const TodoAdd = ({ HandleAddTodo }) => {
   const [{ description }, handleInputChange, reset] = useForm({ description: "" });
 
   const HandleSubmit = ( event ) => {
