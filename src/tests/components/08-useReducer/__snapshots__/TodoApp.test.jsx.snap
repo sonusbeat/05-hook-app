@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <TodoApp /> Debe de coincidir con el snapshot 1`] = `
+<section>
+  <h2
+    className="text-center mb-4"
+  >
+    Todo App 
+    <small>
+      (
+      0
+      )
+    </small>
+  </h2>
+  <TodoAdd
+    HandleAddTodo={[Function]}
+  />
+  <div
+    className="alert alert-warning text-center"
+  >
+    <strong>
+      Aún no hay tareas creadas
+    </strong>
+  </div>
+</section>
+`;
