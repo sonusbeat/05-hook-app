@@ -14,6 +14,7 @@ const RealExampleRef = () => {
 
       <div className="form-group text-center mt-5">
         <button
+          id="toggle"
           className="btn btn-primary"
           onClick={() => setShow(!show)}
         >Mostrar / Ocultar</button>

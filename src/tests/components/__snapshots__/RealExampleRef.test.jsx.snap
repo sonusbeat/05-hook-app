@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <RealExampleRef /> Debería de mostrarse correctamente 1`] = `
+<section>
+  <h2
+    className="text-center"
+  >
+    Real Example Ref
+  </h2>
+  <hr />
+  <div
+    className="form-group text-center mt-5"
+  >
+    <button
+      className="btn btn-primary"
+      id="toggle"
+      onClick={[Function]}
+    >
+      Mostrar / Ocultar
+    </button>
+  </div>
+</section>
+`;
