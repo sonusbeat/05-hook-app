@@ -8,7 +8,7 @@ const TodoItem = ({ HandleToggle, HandleDelete, todo, index }) => {
           className={todo.done ? "description completed" : "description"}
           onClick={() => HandleToggle(todo.id)}
         >
-          {`${index + 1}. ${todo.description}`}
+          { `${index + 1}. ${todo.description}` }
         </p>
       </td>
       <td className="text-center">{todo.done ? "Yes" : "No"}</td>

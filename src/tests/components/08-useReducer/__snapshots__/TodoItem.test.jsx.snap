@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el component <TodoItem /> Deberia coincidir con el Snapshot 1`] = `
+<tr>
+  <td>
+    <p
+      className="description"
+      onClick={[Function]}
+    >
+      1. Aprender React
+    </p>
+  </td>
+  <td
+    className="text-center"
+  >
+    No
+  </td>
+  <td
+    className="text-center"
+  >
+    <button
+      className="btn btn-danger btn-sm"
+      onClick={[Function]}
+    >
+      Delete
+    </button>
+  </td>
+</tr>
+`;
