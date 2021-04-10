@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puebas en <MultipleCustomHooks /> Debe coincidir con el Snapshot 1`] = `
+<section>
+  <h3
+    className="text-center"
+  >
+    Breaking Bad Quotes
+  </h3>
+  <div
+    className="alert alert-info d-flex justify-content-around align-items-center mt-4"
+  >
+    <strong>
+      Loading...
+    </strong>
+    <div
+      aria-hidden="true"
+      className="spinner-border text-info"
+      role="status"
+    />
+  </div>
+  <div
+    className="text-right"
+  >
+    <button
+      className="btn btn-secondary"
+      onClick={[Function]}
+    >
+      Siguiente quote
+    </button>
+  </div>
+</section>
+`;
