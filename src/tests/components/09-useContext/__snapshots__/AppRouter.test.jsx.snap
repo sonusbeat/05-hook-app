@@ -1,29 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pruebas en <AppRouter /> Deberia coincidir con el Snapshot 1`] = `
-<BrowserRouter>
-  <div>
-    <NavBar />
-    <Switch>
-      <Route
-        component={[Function]}
-        exact={true}
-        path="/"
-      />
-      <Route
-        component={[Function]}
-        exact={true}
-        path="/about"
-      />
-      <Route
-        component={[Function]}
-        exact={true}
-        path="/login"
-      />
-      <Redirect
-        to="/"
-      />
-    </Switch>
-  </div>
-</BrowserRouter>
+<div>
+  <nav
+    className="main-nav"
+  >
+    <a
+      aria-current="page"
+      className="nav-link mr-4 active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      Home
+    </a>
+    <a
+      aria-current={null}
+      className="nav-link mr-4"
+      href="/about"
+      onClick={[Function]}
+    >
+      About
+    </a>
+    <a
+      aria-current={null}
+      className="nav-link"
+      href="/login"
+      onClick={[Function]}
+    >
+      Login
+    </a>
+  </nav>
+  <main>
+    <h1
+      className="text-center"
+    >
+      Home Screen
+    </h1>
+    <hr />
+    <pre>
+      {
+   "id": 1,
+   "name": "Daniel",
+   "email": "user@domain.com"
+}
+    </pre>
+  </main>
+</div>
 `;
