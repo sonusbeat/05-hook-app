@@ -10,7 +10,7 @@ const LoginScreen = () => {
       <hr/>
       <button
         className="btn btn-primary"
-        onClick={ () => setUser({ id: 1523, name: "Daniel" }) }
+        onClick={ () => setUser({ id: 123, name: "Daniel" }) }
       >
         Login
       </button>

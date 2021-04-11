@@ -18,5 +18,4 @@ describe('Pruebas en <HomeScreen />', () => {
   test('Deberia coincidir con el Snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-
 });
